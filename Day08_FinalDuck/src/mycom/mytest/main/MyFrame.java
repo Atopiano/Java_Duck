@@ -2,6 +2,8 @@ package mycom.mytest.main;
 
 import java.awt.Frame;
 import java.awt.Graphics;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.util.Random;
 
 import mycom.mytest.duck.DecoyDuck;
@@ -22,6 +24,13 @@ public class MyFrame extends Frame{
 	
 	public MyFrame() {
 		super();	//Frame f=new Frame();
+		//윈도우 창닫기 처리기 등록
+		this.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) //WindowAdapter class
+			{
+				System.exit(0); //프로그램 종료 하기
+			}
+		}); 
 		this.setSize(MyFrame.FRAME_WIDTH, MyFrame.FRAME_HEIGHT); //f.setSize();
 		this.setVisible(true); // 독점권요청 -->OS-->독점권뺏고 다시 부여-->paint(g)
 	}
