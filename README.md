@@ -1,6 +1,8 @@
 # Java_Duck
 Java로 4종류의 DUCK객체를 GUI로 출력
 
+## 문제
+
 <img width="364" alt="image" src="https://user-images.githubusercontent.com/121912367/226524346-82b89cb8-cf3d-4b67-a67f-c3fa6c4057c3.png">
 
 총 20마리가 랜덤으로 출력되게 구현해야 함
